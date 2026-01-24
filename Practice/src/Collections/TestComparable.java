@@ -11,6 +11,12 @@ import java.util.List;
 	}
  */
 
+/*
+ * Natural Ordering defining for the class where java can't decide
+ * single comparing parameter
+ * inside the class
+ */
+
 class Employee implements Comparable<Employee>{
 	
     int id;
@@ -24,14 +30,17 @@ class Employee implements Comparable<Employee>{
     }
 
 	@Override
-	public int compareTo(Employee o) {
-		return this.id - o.id; //important
+	public int compareTo(Employee object) {
+		//return this.id - object.id; //important acceding 
+		
+	 return object.id - this.id; //descending 
 	}
 
 	@Override
 	public String toString() {
 		return "Employee [id=" + id + ", name=" + name + ", salary=" + salary + "]\n";
 	}
+	
 	
 	
 }
@@ -54,6 +63,8 @@ public class TestComparable {
 		Collections.sort(list);
 		
 		System.out.println(list);
+		
+		
 		
 	}
 }

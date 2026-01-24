@@ -24,15 +24,14 @@ public class ArrayListDemo {
 //        System.out.println("Element at index 1: " + list.get(1));
 //        
 //        System.out.println(list.get(3));
-//        
+        
 		
 
 //		List<Integer> list = new ArrayList();
 //
 //		int arr[] = { 1, 2, 3, 4, 5, 6 };
 //
-//		for (int i : arr)
-//			list.add(i);
+//		for (int i : arr) list.add(i);
 //
 //		System.out.println(list);
 //
@@ -40,12 +39,12 @@ public class ArrayListDemo {
 //		
 		
 
-//		String str[] = { "abc", "omp", "zero" };
+	//	String str[] = { "abc", "omp", "zero" };
 //		
 //		/* this returns a fixed size of list cannot add  or remove*/
 //		List<String> list = Arrays.asList(str);
 //	
-//		List<Integer> list2 = Arrays.asList(1,2,3,4,5);
+//		List<Integer> list2 = Arrays.asList(1,2,3,4,5); 
 //		//list2.add(7);//this will give compilation error
 //	
 //		System.out.println(list.get(1));
@@ -54,33 +53,35 @@ public class ArrayListDemo {
 //		
 //		for(String str1 : list) System.out.print(str1+" ");
 //		
-//		System.out.println(list.contains("omp"));
+//		System.out.println(list.contains("omp")); //O(n)
 		
 		
 		
 		
-//		List<Integer> numbers = new ArrayList<>(Arrays.asList(1,2,3,4,5));
-//		List<Integer> numbers2 = new ArrayList<>();
-//		
-//		numbers2.add(99);
-//		numbers2.add(88);
-//		numbers2.add(77);
-//		
-//		//add elements together
-//		numbers.addAll(numbers2);
-//		
-//		
-//		System.out.println(numbers);
-//		
-//		numbers.remove(2); //index
-//		
-//		System.out.println("After removing at given index"+numbers);
-//		
-//		numbers.add(3,40);
-//		
-//		System.out.println("After adding element at idx 3 : "+numbers);
-//		
-//		numbers.set(2,100);
+		List<Integer> numbers = new ArrayList<>(Arrays.asList(1,2,3,4,5));
+		List<Integer> numbers2 = new ArrayList<>();
+		
+		numbers2.add(99);
+		numbers2.add(88);
+		numbers2.add(77);
+		
+		//add elements together
+		numbers.addAll(numbers2);
+		
+		
+		System.out.println(numbers);
+		
+		numbers.remove(2); //index
+		
+		
+		
+		System.out.println("After removing at given index"+numbers);
+		
+		numbers.add(3,40);
+		
+		System.out.println("After adding element at idx 3 : "+numbers);
+		
+		numbers.set(2,100);
 		
 		
 		/*
@@ -101,6 +102,10 @@ public class ArrayListDemo {
 		
 		list.remove(1); // this removes at 1st index;
 		
+		
+		
+		
+		
 		/* this removes the same value element first reference
 		 * because it takes the object as parameter */
 		
@@ -109,6 +114,8 @@ public class ArrayListDemo {
 		
 		Integer[] arr = list.toArray(new Integer[0]);  // new Integer[0] tells the type 
 		String[] arr2 = list.toArray(new String[0]);
+		
+		
 		
 		
 		
